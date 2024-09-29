@@ -1,0 +1,16 @@
+{
+  "root": [
+    "./src/app.tsx",
+    "./src/wallet.tsx",
+    "./src/main.tsx",
+    "./src/vite-env.d.ts",
+    "./src/components/ui/button.tsx",
+    "./src/components/ui/card.tsx",
+    "./src/components/ui/index.ts",
+    "./src/components/ui/input.tsx",
+    "./src/context/appcontext.ts",
+    "./src/hooks/usewallet.ts",
+    "./src/lib/utils.ts"
+  ],
+  "version": "5.6.2"
+}

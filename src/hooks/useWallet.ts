@@ -82,7 +82,17 @@ export const useWallet = () => {
         if (accounts.length) handleAccountChanged(accounts[0]);
       }
     } catch (error) {
-      handleError(error);
+      if (error instanceof Error) {
+        if (
+          error.message.includes(
+            "Request of type 'wallet_requestPermissions' already pending"
+          )
+        ) {
+          alert("Please approve pending connection requests");
+        }
+      } else {
+        console.error(error);
+      }
     }
   };
 
