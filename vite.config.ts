@@ -4,7 +4,6 @@ import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/eip1193_wallet_connect",
   plugins: [react()],
   resolve: {
     alias: {
